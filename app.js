@@ -15,7 +15,7 @@ const app = express();
 // app.use('/public',express.static(path.join(__dirname,'public')));
 
 // Body Parser middleware.
-app.use(bodyParser.json());
+app.use(bodyParser.json()); // fetching the json data from the body. 
 app.use(bodyParser.urlencoded({ extended: false})); 
 
 // app.get('/',(req,res) => {
